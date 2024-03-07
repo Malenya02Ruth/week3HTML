@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration of a New Student</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="date of birth"> Select your Date of birth</label>
+            <select name="month" required >
+                <option value="month">Month</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+            </select> 
+            <select name="days" required >
+                <option value="days">Days</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select name="years" required>
+                <option value="years">Years</option>
+                <option value="2001">2001</option>
+                <option value="2020">2020</option>
+            </select>
+            <br>
+            <label for="gender"> Select your Gender:</label >
+            <input type="radio" id="gender" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br>
+            <label for="adress">Enter your Adress:</label>
+            <input type="text" name="adress" id="adress" required>
+            <br>
+            <label for="telephone">Telephone:</label>
+            <input type="telephone" name="telephone" id="telephone" placeholder="+254700000000" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="favour@email.com">
+            <br>
+            <label for="course">Select your Course:</label>
+            <select id="course" name="course" required>
+                <option value=""></option>
+                <option value="Economics">Economics:</option>
+                <option value="Pharmacy">Pharmacy:</option>
+                <option value="Computer Science">Computer Science:</option>
+                <option value="Education">Education:</option>
+                <option value="Law">Law:</option>
+            </select>
+            <br>
+            <button type="submit" name="register">Register</button>
+            <button type="button" onclick="window.location.href='index.html';">Cancel</button>
+        </form>
+    </body>
+</html>
